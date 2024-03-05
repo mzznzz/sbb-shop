@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ShoesMall</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+		<div class="top">
+  <nav class="top-nav">
+    <button type="button" class="top-nav-modal">
+      <i class="bx bxs-grid"></i>
+    </button>
+    <a href="index.html" class="top-title">SHOES</a>
+    <a href="cart.html" class="top-nav-cart">
+      <i class="bx bx-cart"></i>
+      <strong class="top-cart-count count-mobile"></strong>
+    </a>
+    <div class="top-category">
+      <ul class="category-box">
+        <li class="category-item">
+          <a href="index.html#new">New</a>
+        </li>
+        <li class="category-item">
+          <a href="index.html#goods">Goods</a>
+        </li>
+        <li class="category-item">
+          <a href="wishlist.html">Wish</a>
+        </li>
+        <li class="category-item">
+          <div class="top-cart">
+            <a href="cart.html">Cart</a>
+            <strong class="top-cart-count count-desk"></strong>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="top-nav-category">
+    <ul class="category-box">
+      <li class="category-item">
+        <a href="index.html#new">New</a>
+      </li>
+      <li class="category-item">
+        <a href="index.html#goods">Goods</a>
+      </li>
+      <li class="category-item">
+        <a href="wishlist.html">Wish</a>
+      </li>
+      <li class="category-item"><a href="cart.html">Cart</a></li>
+    </ul>
+    <button type="button" class="category-close">
+      <i class="bx bx-x" style="color: #ffffff"></i>
+    </button>
+  </div>
+</div>
+
+	</header>
+
+    <!-- goods detail-->
+    <main class="detail-page">
+      <div class="detail-container">
+        <div class="detail-goods-photo">
+          <img src="" alt="goods-image" class="detail-photo" />
+        </div>
+        <div class="detail-info-box">
+          <div class="detail-goods">
+            <dl class="detail-info">
+              <dt class="detail-name"></dt>
+              <dd class="detail-price"></dd>
+            </dl>
+            <p class="detail-summary">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              minima impedit omnis. Velit cum ipsam commodi sunt mollitia quidem
+              expedita, ratione nobis est laudantium natus officia. Sit
+              architecto exercitationem nobis!
+            </p>
+          </div>
+          <div class="detail-info-control">
+            <button type="button" class="control-btn detail-wish">WISH</button>
+            <button type="button" class="control-btn detail-cart">CART</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+		<div class="info-page">
+  <ul class="inner-info-box">
+    <li class="list-info">
+      <a href="/" class="info footer-tit">SHOES</a>
+    </li>
+    <li class="list-info">
+      <a href="#" class="info">Privacy Statement</a>
+    </li>
+    <li class="list-info">
+      <a href="#" class="info">Terms of service</a>
+    </li>
+  </ul>
+  <p class="inner-copyright">
+    Copyright &copy; Jeong Hee Yeon. All Rights Reserved.
+  </p>
+</div>
+
+	</footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/loadItem.js"></script>
+    <script type="module" src="./js/detailPage.js"></script>
+  </body>
+</html>
